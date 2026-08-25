@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(EMUZ80_RP2040_PCB_PHEMU6809_Firmware EMUZ80_RP2040_PCB_PHEMU6809_Firmware.c romdata.c track34.c sd_img.c sd_emu.c)
+add_executable(EMUZ80_RP2040_PCB_PHEMU6809_Firmware EMUZ80_RP2040_PCB_PHEMU6809_Firmware.c track34.c sd_img.c sd_emu.c)
 
 pico_set_program_name(EMUZ80_RP2040_PCB_PHEMU6809_Firmware "EMUZ80_RP2040_PCB_PHEMU6809_Firmware")
 pico_set_program_version(EMUZ80_RP2040_PCB_PHEMU6809_Firmware "0.1")
