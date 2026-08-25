@@ -84,14 +84,19 @@ EEPROM/UF2 書き込み方法: BOOTSEL を押しながら USB 接続し、生成
 
 ## 実行例
 
-![実行例](./img/img4.png)
+![実行例1](./img/img4.png)
+![実行例2](./img/img5.png)
 
 ## 設定変更（上級者向け）
 
-MC6809P クロック周波数は以下の定義をソース先頭で変更して再ビルドします。
+RP2040 システムクロック及び MC6809P クロック周波数は以下の定義をソース先頭で変更して再ビルドします。
 
 `EMUZ80_RP2040_PCB_PHEMU6809_Firmware.c`:
 ```c
+#define TARGET_SYS_CLK_KHZ 125000
+
+   :
+
 #define MC6809_CLK_HZ 4000000       // 4MHzHz
 ```
 
