@@ -479,7 +479,7 @@ int main() {
     gpio_put(MRDY_PIN, 1);
  
     sleep_ms(3000);  // Wait for user to connect logic analyzer
-    printf("EMUZ80_RP2040_PHEMU6809(multicomp09-compatible I/O) - 0.01\n");
+    printf("EMUZ80_RP2040_PHEMU6809(multicomp09-compatible I/O) - 2.01\n");
     printf(" $FFD0-$FFD1  ACIA 6850 (status/data)\n");
     printf(" $FFD8-$FFDC  virtual SD (256B, image %u bytes)\n", (unsigned)SD_IMG_SIZE);
     printf(" $FFDD        TIMER (bit1 enable, bit7 IRQ clear/pending)\n");
@@ -513,8 +513,6 @@ int main() {
 //    memcpy(memory + 0x0100, mc6809_test1, sizeof(mc6809_test1));     // 0x0080h をインクリメントするループ
 //    memcpy(memory + 0x0100, mc6809_test3, sizeof(mc6809_test3));     // ACIA($FFD0-D1) 'A' output
 //    memcpy(memory + 0x0100, mc6809_test3_1, sizeof(mc6809_test3_1));     // ACIA($FFD0-D1) Hello World output
-//    printf("BASIC9 loaded to memory (size=%d bytes)\n", ROM_SIZE);
-//    memcpy(memory + 0xC000, ROM_DATA, ROM_SIZE);   // BASIC9
 
     /* NitrOS-9 direct boot (same as nitros9-runtime make-boot-bins.py):
      *   track34.bin → $2600 (4608 bytes, magic "OS")
