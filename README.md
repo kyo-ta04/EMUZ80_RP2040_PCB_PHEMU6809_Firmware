@@ -22,7 +22,7 @@ multicomp09 互換の NitrOS-9 環境をメイン CPU 側へ提供します。
 - multicomp09 互換の仮想SDを $FFD8-$FFDC でエミュレート（256バイトブロック）
 - USB CDC (`stdio_usb`) でシリアル I/O をブリッジ
 - NitrOS-9 の `track34` をロードして直接起動
-- `~/6809/nitros9-runtime` で作成したNitrOS-9 DSDD40イメージを内蔵
+- `nitros9-runtime` で作成したNitrOS-9 DSDD40イメージを内蔵
 - NitrOS-9 BASIC09 の実行に対応
 - システムクロック 288MHz で動作（`TARGET_SYS_CLK_KHZ` にて調整可能）
 - PWM で MC6809 クロック出力を生成（デフォルト 4MHz）
